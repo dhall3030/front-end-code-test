@@ -1,0 +1,344 @@
+@import 'susy';
+@import 'sass/normalize';
+@import 'sass/reset';
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,900');
+
+
+$font-stack: 'Lato', sans-serif;
+$primary-color: #333;
+
+$transProps: all 0.3s ease-out 0s;
+
+
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background-color: #FAFAFA;
+  text-align: left;
+}
+
+
+h1 {
+	
+	text-transform: uppercase; 
+	font-size: 61px; 
+    line-height: 1.48;
+	font-weight: 400;
+	text-align: center;
+	color: $primary-color;
+	margin: 0;
+	
+
+}
+
+h2 {
+
+	text-transform: uppercase;
+	font-size: 40px; 
+	line-height: 1.15;
+	font-weight: 400;
+	letter-spacing: 0.8px;
+	text-align: center;
+	color: $primary-color;
+	margin: 0;
+	
+
+
+
+}
+
+
+h1 > span {
+
+	color: #0ab1b7;
+	font-weight: 700;
+
+}
+
+.sub-heading {
+	text-transform: capitalize;
+	font-size: 40px; 
+	line-height: 1.15;
+	font-weight: 400;
+	letter-spacing: 0.8px;
+	text-align: center;
+	color: $primary-color;
+	margin: 0;
+
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+
+	width: 1435px;
+	margin: 0 auto;
+    padding: 0.5em;
+
+}
+
+
+.grow { 
+
+	transition: all .2s ease-in-out; 
+	//display: block; 
+	//width: 300px;
+	//height: 300px;
+	background-color: #FAFAFA;
+	//box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	box-shadow: 0 0 22px rgba(0,0,0,0.2);
+	width: 100%
+	
+
+
+
+
+}
+
+.grow:hover { transform: scale(1.1); }
+
+
+.big{ 
+	
+	transform: scale(1.1);
+
+ }
+
+.big:hover { transform: scale(1.2); }
+
+.cards { 
+
+	display: grid;
+
+	grid-template-columns: 1fr 1fr 1fr;
+
+	grid-template-rows: 560px 200px;
+
+	grid-column-gap: 100px;
+    grid-row-gap: 4px;
+		
+	grid-template-areas: 
+		"card-a card-b card-c"
+		"text-d text-e text-f";
+		
+
+}
+
+
+.column {
+
+	//background-color: rgba(0,0,0,.2);
+	display: flex;
+	//color: white;
+	//justify-content: center;
+	//border-radius: 5px;
+
+
+}
+
+.column > div {
+
+	width: 100%;
+
+}
+
+
+.card-a {
+
+	grid-area: card-a;
+
+
+}
+
+.card-b {
+
+	grid-area: card-b;
+
+
+}
+
+.card-c {
+
+	grid-area: card-c;
+
+
+}
+
+.text-d {
+
+	grid-area: text-d;
+	
+
+
+}
+
+.text-e {
+
+	grid-area: text-e;
+	
+
+
+}
+
+.text-f {
+
+	grid-area: text-f;
+	
+
+
+}
+
+.under-text {
+
+	text-align: right;
+	display: block;
+	margin-top: 1em;
+	font-style: italic;
+	font-size: 18px;
+
+}
+
+
+.card-header{
+	width: 100%;
+	height: 60px;
+	display: block;
+	text-align: center;
+	background-color: #eee606;
+
+
+}
+
+.card-header > h4 {
+
+	text-transform: uppercase; 
+	font-size: 26px; 
+    line-height: 1.48;
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: 0.5px;
+	color: #000;
+	margin: 0;
+
+
+}
+
+
+.card-body{ 
+
+	width: 100%;
+	height: 150px;
+	display: block;	
+	color: #000;
+	text-align: center;
+	font-weight: 700;
+	font-size: 30px;
+
+
+	
+}
+
+.card-body > .price , .card-footer > .price {
+
+	font-size: 90px;
+	color: #0ab1b7;
+	display: block;
+	font-weight: 700;
+
+
+}
+
+.card-body > .price > em , .card-footer > .price > em {
+
+	
+	font-size: 0.3em;
+	font-style: normal;
+
+
+}
+
+
+
+
+	
+
+
+.card-footer {
+
+	width: 100%; 
+	height: 300px;
+	background-color: #333;
+	-webkit-clip-path: polygon(61% 15%, 100% 4%, 100% 60%, 100% 100%, 0 100%, 0 18%, 30% 0);
+	clip-path: polygon(61% 15%, 100% 4%, 100% 60%, 100% 100%, 0 100%, 0 18%, 30% 0);
+	display: block;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+	color: #FFF;
+
+}
+
+.card-footer > .book-now {
+
+	display: block;
+	background-color: #EEE701; 
+	padding: 19px;
+	color: #333;
+	font-weight: 900; 
+	text-decoration: none;
+	text-align: center;
+	width: 55%;
+	margin: 0 auto;
+	text-transform: uppercase;
+	-webkit-transition: $transProps;
+    transition: $transProps;
+
+
+
+}
+
+
+.card-footer > .book-now:hover {
+
+	color: #FFF;
+	background-color: #0ab1b7;
+
+
+}
+
+
+@media (max-width: 1200px) { 
+
+
+
+
+}
+
+
+@media (max-width: 992px) { 
+
+
+
+}
+
+
+
+@media (max-width: 768px) { 
+
+
+
+}
+
+
+@media (max-width: 576px) { 
+
+
+
+
+}

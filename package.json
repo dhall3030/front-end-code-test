@@ -1,0 +1,19 @@
+{
+  "name": "front-end-test",
+  "version": "1.0.0",
+  "description": "A code test for front end",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dorian Hall",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.11.0",
+    "normalize.css": "^8.0.1",
+    "susy": "^3.0.5"
+  }
+}
