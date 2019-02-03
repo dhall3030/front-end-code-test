@@ -1,4 +1,4 @@
-@import 'susy';
+//@import 'susy';
 //@import 'sass/normalize';
 @import 'sass/reset';
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,900');
@@ -6,9 +6,6 @@
 
 $font-stack: 'Lato', sans-serif;
 $primary-color: #333;
-
-$transProps: all 0.3s ease-out 0s;
-
 
 
 body {
@@ -28,8 +25,7 @@ h1 {
     //line-height: 1.48;
     line-height: 1.5em;
     margin-top: 50px;
-    
-	font-weight: 400;
+    font-weight: 400;
 	text-align: center;
 	color: $primary-color;
 	
@@ -95,11 +91,7 @@ h5 {
  }
 
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 
 .container {
 
@@ -113,11 +105,7 @@ h5 {
 .card { 
 
 	transition: all .2s ease-in-out; 
-	//display: block; 
-	//width: 300px;
-	//height: 300px;
 	background-color: #FAFAFA;
-	//box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 	box-shadow: 0 0 22px rgba(0,0,0,0.2);
 	width: 100%;
 
@@ -334,8 +322,8 @@ h5 {
 		width: 55%;
 		margin: 1.5em auto;
 		text-transform: uppercase;
-		-webkit-transition: $transProps;
-	    transition: $transProps;
+		-webkit-transition: all 0.3s ease-out 0s;
+	    transition: all 0.3s ease-out 0s;
 	    
 
 
@@ -356,34 +344,6 @@ h5 {
 
 }
 
-// .card-footer > .book-now {
-
-// 	display: block;
-// 	background-color: #EEE701; 
-// 	padding: 19px;
-// 	color: #333;
-// 	font-weight: 900; 
-// 	text-decoration: none;
-// 	text-align: center;
-// 	width: 55%;
-// 	margin: 1.5em auto;
-// 	text-transform: uppercase;
-// 	-webkit-transition: $transProps;
-//     transition: $transProps;
-    
-
-
-
-// }
-
-
-// .card-footer > .book-now:hover {
-
-// 	color: #FFF;
-// 	background-color: #0ab1b7;
-
-
-// }
 
 
 @media (max-width: 1400px) { 
@@ -470,7 +430,7 @@ h5 {
 
 
 		font-size: 3.96vw;
-		padding: 0 0.5%;
+		padding: 0 3.5%;
 
 
 	}
@@ -561,7 +521,7 @@ h5 {
 
  	.card-a {
 
-		grid-area: 3 / 1 / span 1 / span 3;
+		grid-area: 3 / 1 / span 1 / span 2;
 
 
 	}
@@ -570,21 +530,21 @@ h5 {
 
 		
 
-		grid-area: 1 / 1 / span 1 / span 3;
+		grid-area: 1 / 1 / span 1 / span 2;
 
 
 	}
 
 	.card-c {
 
-		grid-area: 5 / 1 / span 1 / span 3;
+		grid-area: 5 / 1 / span 1 / span 2;
 
 
 	}
 
 	.text-d {
 
-		grid-area: 2 / 1 / span 1 / span 3;
+		grid-area: 2 / 1 / span 1 / span 2;
 	
 
 
@@ -592,7 +552,7 @@ h5 {
 
 	.text-e {
 
-		grid-area: 4 / 1 / span 1 / span 3;
+		grid-area: 4 / 1 / span 1 / span 2;
 		display: block;
 	
 
@@ -601,7 +561,7 @@ h5 {
 
 	.text-f {
 
-		grid-area: 6 / 1 / span 1 / span 3;
+		grid-area: 6 / 1 / span 1 / span 2;
 
 	
 
