@@ -33,6 +33,14 @@ h1 {
 
 }
 
+h1 > span {
+
+	color: #0ab1b7;
+	font-weight: 700;
+
+}
+
+
 h2 {
 
 	text-transform: uppercase;
@@ -52,12 +60,7 @@ h2 {
 }
 
 
-h1 > span {
 
-	color: #0ab1b7;
-	font-weight: 700;
-
-}
 
 h3 {
 	text-transform: capitalize;
@@ -124,7 +127,11 @@ h5 {
 
 }
 
-.card:hover { transform: scale(1.1); }
+.card:hover { 
+	
+	transform: scale(1.1); 
+
+}
 
 
 .big{ 
@@ -135,9 +142,12 @@ h5 {
 
 .big:hover { transform: scale(1.2); }
 
+
+//large desktop grid
 .cards { 
 
 	margin-top: 80px;
+	
 	margin-bottom: 60px;
 
 	display: grid;
@@ -147,6 +157,7 @@ h5 {
 	grid-template-rows: auto auto;
 
 	grid-column-gap: 100px;
+    
     grid-row-gap: 4px;
 		
 	grid-template-areas: 
@@ -345,7 +356,7 @@ h5 {
 }
 
 
-
+// screen width meets container width.
 @media (max-width: 1400px) { 
 
 	.container{
@@ -365,7 +376,7 @@ h5 {
 
 
 }
-
+//larger desktops
 @media (max-width: 1200px) {
 
 
@@ -395,7 +406,7 @@ h5 {
 
 }
 
-
+//smaller desktops
 @media (max-width: 992px) { 
 
 	.big{ 
@@ -414,7 +425,7 @@ h5 {
 }
 
 
-
+// tablets
 @media (max-width: 768px) { 
 
 	h1 { 
@@ -471,9 +482,7 @@ h5 {
 
 		grid-template-rows: auto auto auto auto;
 
-		// grid-template-areas: 
-		// "card-a card-b card-c"
-		// "text-d . text-f";
+		
 
 		grid-template-areas: 
 		"card-a card-b"
@@ -502,6 +511,8 @@ h5 {
 
 }
 
+
+//phone
 
 @media (max-width: 576px) { 
 
