@@ -18,33 +18,23 @@ body {
 
 
 h1 {
-	
-	text-transform: uppercase; 
+	text-transform: uppercase;
 	font-size: 3.00vw;
-	//font-size: 3.5em; 
-    //line-height: 1.48;
-    line-height: 1.5em;
-    margin-top: 50px;
-    font-weight: 400;
+  line-height: 1.5em;
+  margin-top: 50px;
+  font-weight: 400;
 	text-align: center;
 	color: $primary-color;
-	
-	
-
 }
 
 h1 > span {
-
 	color: #0ab1b7;
 	font-weight: 700;
-
 }
 
 
 h2 {
-
 	text-transform: uppercase;
-	//font-size: 2.5em; 
 	font-size: 1.98vw;
 	line-height: 1.15;
 	line-height: 1.5em;
@@ -52,34 +42,19 @@ h2 {
 	letter-spacing: 0.8px;
 	text-align: center;
 	color: $primary-color;
-	
-	
-
-
-
 }
-
-
-
 
 h3 {
 	text-transform: capitalize;
-	//font-size: 2.5em; 
 	font-size: 1.98vw;
 	line-height: 1.5em;
 	font-weight: 400;
 	letter-spacing: 0.8px;
 	text-align: center;
 	color: $primary-color;
-	
-
 }
 
-
-h5 { 
-
-	
-	//font-size: 2.5em; 
+h5 {
 	font-size: 1.98vw;
 	line-height: 1.15;
 	font-weight: 400;
@@ -87,229 +62,137 @@ h5 {
 	text-align: center;
 	color: $primary-color;
 	margin: 0;
-
-
-
-
  }
 
-
-
-
 .container {
-
 	width: 1400px;
 	margin: 0 auto;
-    padding: 0.5em;
-
+  padding: 0.5em;
 }
 
-
-.card { 
-
-	transition: all .2s ease-in-out; 
+.card {
+	transition: all .2s ease-in-out;
 	background-color: #FAFAFA;
 	box-shadow: 0 0 22px rgba(0,0,0,0.2);
 	width: 100%;
 
 	p {
-		//font-size: 1.4em;
-		font-size: 1.00vw;
-		font-weight: 700;
-	    letter-spacing: 0.5px;
+	 font-size: 1.00vw;
+	 font-weight: 700;
+	 letter-spacing: 0.5px;
 	}
-
-
-	
-
-
-
-
 }
 
-.card:hover { 
-	
+.card:hover {
 	transform: scale(1.1); 
-
 }
 
 
-.big{ 
-	
+.big{
 	transform: scale(1.1);
-
  }
 
 .big:hover { transform: scale(1.2); }
 
 
 //large desktop grid
-.cards { 
+.cards {
 
 	margin-top: 80px;
-	
 	margin-bottom: 60px;
-
 	display: grid;
-
 	grid-template-columns: 1fr 1fr 1fr;
-
 	grid-template-rows: auto auto;
-
 	grid-column-gap: 100px;
-    
-    grid-row-gap: 4px;
-		
-	grid-template-areas: 
+  grid-row-gap: 4px;
+	grid-template-areas:
 		"card-a card-b card-c"
 		"text-d . text-f";
-		
-
 }
 
-
 .column {
-
 	display: flex;
 }
 
 .column > div {
-
 	width: 100%;
-
 }
 
-
 .card-a {
-
 	grid-area: card-a;
-
-
 }
 
 .card-b {
-
 	grid-area: card-b;
-
-
 }
 
 .card-c {
-
 	grid-area: card-c;
-
-
 }
 
 .text-d {
-
 	grid-area: text-d;
-	
-
-
 }
 
 .text-e {
-
 	grid-area: text-e;
 	display: none;
-	
-
-
 }
 
 .text-f {
-
 	grid-area: text-f;
-	
-
-
 }
 
 .under-text {
-
 	text-align: right;
 	display: block;
 	margin: 0.3em;
 	font-style: italic;
 	font-size: 0.8em;
-
 }
 
-
-.card-header{
+.card-header {
 	width: 100%;
-	// height: 60px;
 	display: block;
 	text-align: center;
 	background-color: #eee606;
 	padding: 1px 0;
-
-
 }
 
 .card-header > h4 {
-
 	text-transform: uppercase; 
-	//font-size: 1.5em; 
 	font-size: 1.00vw;
-    //line-height: 1.48;
-    line-height: 1.5em;
+  line-height: 1.5em;
 	font-weight: 700;
 	text-align: center;
 	letter-spacing: 0.5px;
 	color: #000;
 	margin: 0.5em 0;
-
-
 }
 
-
-.card-body{ 
-
+.card-body { 
 	width: 100%;
-	// height: 150px;
 	display: block;	
 	color: #000;
 	text-align: center;
 	padding: 10px 0;
-	
-
-
-	
 }
 
 .card-body > .price , .card-footer > .price {
-
-	//font-size: 4.5em;
 	font-size: 4.00vw; 
 	color: #0ab1b7;
 	display: block;
 	font-weight: 700;
 	margin: 0.2em;
-
-
 }
 
 .card-body > .price > em , .card-footer > .price > em {
-
-	
 	font-size: 0.3em;
 	font-style: normal;
-
-
 }
 
-
-
-
-	
-
-
 .card-footer {
-
 	width: 100%; 
-	// height: 300px;
 	background-color: #333;
 	-webkit-clip-path: polygon(61% 15%, 100% 4%, 100% 60%, 100% 100%, 0 100%, 0 18%, 30% 0);
 	clip-path: polygon(61% 15%, 100% 4%, 100% 60%, 100% 100%, 0 100%, 0 18%, 30% 0);
@@ -320,10 +203,7 @@ h5 {
 	padding-top: 80px;
 	padding-bottom: 10px;
 
-
-
 	.book-now {
-
 		display: block;
 		background-color: #EEE701; 
 		padding: 19px;
@@ -334,292 +214,152 @@ h5 {
 		width: 55%;
 		margin: 1.5em auto;
 		text-transform: uppercase;
-		-webkit-transition: all 0.3s ease-out 0s;
-	    transition: all 0.3s ease-out 0s;
-	    
-
-
-
+	  -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
 	}
 
 	.book-now:hover {
-
 		color: #FFF;
 		background-color: #0ab1b7;
-
-
 	}
-
-
-
-
-
 }
-
 
 // screen width meets container width.
 @media (max-width: 1400px) { 
 
-	.container{
+  .container {
 		width: 100%;
 		margin: 0;
 		padding: 0;
-
-
 	}
 
 	.cards {
-
 		padding: 0 1.5em;
 		grid-column-gap: 50px;
-
 	}
-
-
 }
+
 //larger desktops
 @media (max-width: 1200px) {
 
-
 	.card-header > h4 {
-
 		font-size: 1.50vw;
-
 	}
 
 	.card {
-
-		p{
-	
+		p {
 			font-size: 2.00vw;
-
 		}
-
-
-
-	
-
-
 	}
-
-
-
-
 }
 
 //smaller desktops
 @media (max-width: 992px) { 
 
-	.big{ 
-	
+	.big {
 		transform: none;
-
  	}
+
  	.cards{
-
 		grid-column-gap: 10px;
-
  	}
-
- 	
-
 }
-
 
 // tablets
 @media (max-width: 768px) { 
 
-	h1 { 
-
+	h1 {
 		font-size: 6.00vw;
 		padding: 0 0.5%;
-
-
-
-	 }
+	}
 
 	h2 , h3 , h5 {
-
-
 		font-size: 3.96vw;
 		padding: 0 3.5%;
-
-
 	}
 
 	.card-header > h4 {
-
 		font-size: 2.00vw;
-
 	}
-
 	.card {
-
-		p{
-	
+		p {
 			font-size: 2.50vw;
-
 		}
-
-
-
-	
-
-
 	}
 
-	
 	.card-body > .price , .card-footer > .price {
-
-
 		font-size: 6.00vw;
-
-	 }	
+	 }
 
 	.cards {
-
-
 		grid-template-columns: 1fr 1fr;
-
 		grid-template-rows: auto auto auto auto;
-
-		
-
 		grid-template-areas: 
 		"card-a card-b"
 		"text-d ."
 		"card-c card-c"
 		"text-f text-f";
-
-
 	}
 
 	.card-c > .card , .text-f > div {
-
 		width: 50%;
 		margin: 0 auto;
-
-
-
-
 	}
-
-	
-
-
-	
-	
-
 }
 
-
 //phone
-
 @media (max-width: 576px) { 
 
 .cards{
-
 		//grid-template-rows: 682px 170px 682px 170px 682px 170px;
 		grid-template-rows: auto auto auto auto auto auto ;
 		grid-template-areas: none;
 		grid-row-gap: 8px;
-
-		
-
-
-
-
  	}
 
  	.card-a {
-
 		grid-area: 3 / 1 / span 1 / span 2;
-
-
 	}
 
 	.card-b {
-
-		
-
 		grid-area: 1 / 1 / span 1 / span 2;
-
-
 	}
 
 	.card-c {
-
 		grid-area: 5 / 1 / span 1 / span 2;
-
-
 	}
 
 	.text-d {
-
 		grid-area: 2 / 1 / span 1 / span 2;
-	
-
-
 	}
 
 	.text-e {
 
 		grid-area: 4 / 1 / span 1 / span 2;
 		display: block;
-	
-
-
 	}
 
 	.text-f {
 
 		grid-area: 6 / 1 / span 1 / span 2;
-
-	
-
-
 	}
-
 
 	.card-c > .card , .text-f > div {
-
 		width: 100%;
-		
-
-
-
-
 	}
-
 
 	.card {
 
-		p{
-	
+		p {
 			font-size: 4.50vw;
-
 		}
-
-
-
-	
-
-
 	}
 
-	
 	.card-body > .price , .card-footer > .price {
-
-
 		font-size: 8.50vw;
-
-	 }	
+	 }
 
 	.card-header > h4 {
-
 		font-size: 3.50vw;
-
-	} 
-
-
+	}
 }

@@ -3,7 +3,8 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var minify = require('gulp-minify');
- 
+var browserSync = require('browser-sync').create();
+
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.sass')
     .pipe(sass({
@@ -11,7 +12,10 @@ gulp.task('sass', function () {
     	  outputStyle: 'compressed',
           includePaths: ['node_modules/susy/sass']
     }).on('error', sass.logError))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('./css'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
 });
 
 gulp.task('scss', function () {
@@ -22,7 +26,10 @@ gulp.task('scss', function () {
 
 
     }).on('error', sass.logError))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('./css'))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
 });
 
 
@@ -37,10 +44,23 @@ gulp.task('compress', function() {
         ignoreFiles: ['.combo.js', '-min.js']
     }))
     .pipe(gulp.dest('./js'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
 });
- 
-gulp.task('watch', function () {
+
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: './'
+    },
+  })
+})
+
+gulp.task('watch', ['browserSync'], function () {
   gulp.watch('./sass/**/*.sass', ['sass']);
   gulp.watch('./sass/**/*.scss', ['scss']);
   gulp.watch('./js/**/*.js', ['compress']);
+
 });
+
