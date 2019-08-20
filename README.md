@@ -1,14 +1,16 @@
-#front-end-code-test
+# front-end-code-test
 
 ## Project setup
-
+```
 npm install
 
 npm install gulp -g
-
-## Start Project
-
+```
+### Start Project
+```
 gulp watch
+```
+
 
 
 
