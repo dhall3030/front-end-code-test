@@ -84,12 +84,12 @@ h5 {
 }
 
 .card:hover {
-	transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 
 .big{
-	transform: scale(1.1);
+  transform: scale(1.1);
  }
 
 .big:hover { transform: scale(1.2); }
@@ -161,7 +161,7 @@ h5 {
 .card-header > h4 {
 	text-transform: uppercase;
 	font-size: 1.00vw;
-  line-height: 1.5em;
+ line-height: 1.5em;
 	font-weight: 700;
 	text-align: center;
 	letter-spacing: 0.5px;
@@ -213,8 +213,8 @@ h5 {
 		width: 55%;
 		margin: 1.5em auto;
 		text-transform: uppercase;
-	  -webkit-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s;
+	 -webkit-transition: all 0.3s ease-out 0s;
+   transition: all 0.3s ease-out 0s;
 	}
 
 	.book-now:hover {
@@ -227,14 +227,14 @@ h5 {
 @media (max-width: 1400px) {
 
   .container {
-		width: 100%;
-		margin: 0;
-		padding: 0;
+		 width: 100%;
+		 margin: 0;
+		 padding: 0;
 	}
 
 	.cards {
-		padding: 0 1.5em;
-		grid-column-gap: 50px;
+		 padding: 0 1.5em;
+		 grid-column-gap: 50px;
 	}
 }
 
@@ -339,7 +339,6 @@ h5 {
 	}
 
 	.text-f {
-
 		grid-area: 6 / 1 / span 1 / span 2;
 	}
 
