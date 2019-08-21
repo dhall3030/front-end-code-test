@@ -18,13 +18,13 @@ body {
 
 
 h1 {
-	text-transform: uppercase;
-	font-size: 3.00vw;
+  text-transform: uppercase;
+  font-size: 3.00vw;
   line-height: 1.5em;
   margin-top: 50px;
   font-weight: 400;
-	text-align: center;
-	color: $primary-color;
+  text-align: center;
+  color: $primary-color;
 }
 
 h1 > span {
@@ -84,7 +84,7 @@ h5 {
 }
 
 .card:hover {
-	transform: scale(1.1); 
+	transform: scale(1.1);
 }
 
 
@@ -97,16 +97,16 @@ h5 {
 
 //large desktop grid
 .cards {
-	margin-top: 80px;
-	margin-bottom: 60px;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: auto auto;
-	grid-column-gap: 100px;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-column-gap: 100px;
   grid-row-gap: 4px;
-	grid-template-areas:
-		"card-a card-b card-c"
-		"text-d . text-f";
+  grid-template-areas:
+  	"card-a card-b card-c"
+  	"text-d . text-f";
 }
 
 .column {
@@ -159,7 +159,7 @@ h5 {
 }
 
 .card-header > h4 {
-	text-transform: uppercase; 
+	text-transform: uppercase;
 	font-size: 1.00vw;
   line-height: 1.5em;
 	font-weight: 700;
@@ -169,16 +169,16 @@ h5 {
 	margin: 0.5em 0;
 }
 
-.card-body { 
+.card-body {
 	width: 100%;
-	display: block;	
+	display: block;
 	color: #000;
 	text-align: center;
 	padding: 10px 0;
 }
 
 .card-body > .price , .card-footer > .price {
-	font-size: 4.00vw; 
+	font-size: 4.00vw;
 	color: #0ab1b7;
 	display: block;
 	font-weight: 700;
@@ -191,7 +191,7 @@ h5 {
 }
 
 .card-footer {
-	width: 100%; 
+	width: 100%;
 	background-color: #333;
 	-webkit-clip-path: polygon(61% 15%, 100% 4%, 100% 60%, 100% 100%, 0 100%, 0 18%, 30% 0);
 	clip-path: polygon(61% 15%, 100% 4%, 100% 60%, 100% 100%, 0 100%, 0 18%, 30% 0);
@@ -204,10 +204,10 @@ h5 {
 
 	.book-now {
 		display: block;
-		background-color: #EEE701; 
+		background-color: #EEE701;
 		padding: 19px;
 		color: #333;
-		font-weight: 900; 
+		font-weight: 900;
 		text-decoration: none;
 		text-align: center;
 		width: 55%;
@@ -224,7 +224,7 @@ h5 {
 }
 
 // screen width meets container width.
-@media (max-width: 1400px) { 
+@media (max-width: 1400px) {
 
   .container {
 		width: 100%;
@@ -253,7 +253,7 @@ h5 {
 }
 
 //smaller desktops
-@media (max-width: 992px) { 
+@media (max-width: 992px) {
 
 	.big {
 		transform: none;
@@ -265,7 +265,7 @@ h5 {
 }
 
 // tablets
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
 
 	h1 {
 		font-size: 6.00vw;
@@ -293,7 +293,7 @@ h5 {
 	.cards {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto auto auto auto;
-		grid-template-areas: 
+		grid-template-areas:
 		"card-a card-b"
 		"text-d ."
 		"card-c card-c"
@@ -307,7 +307,7 @@ h5 {
 }
 
 //phone
-@media (max-width: 576px) { 
+@media (max-width: 576px) {
 
 .cards{
 		//grid-template-rows: 682px 170px 682px 170px 682px 170px;
