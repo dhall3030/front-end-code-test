@@ -9,10 +9,10 @@ $primary-color: #333;
 
 
 body {
-  	font: 100% $font-stack;
-  	color: $primary-color;
-  	background-color: #fafafa;
-  	text-align: left;
+	font: 100% $font-stack;
+	color: $primary-color;
+	background-color: #fafafa;
+	text-align: left;
   // overflow-x: hidden;
 }
 
@@ -97,7 +97,6 @@ h5 {
 
 //large desktop grid
 .cards {
-
 	margin-top: 80px;
 	margin-bottom: 60px;
 	display: grid;
