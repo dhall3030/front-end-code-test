@@ -64,3 +64,5 @@ gulp.task('watch', ['browserSync'], function () {
 
 });
 
+gulp.task( 'default', [ 'watch' ] )
+

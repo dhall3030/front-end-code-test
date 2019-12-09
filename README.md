@@ -3,11 +3,15 @@
 ## Project setup
 ```
 npm install
+```
+### Start project with
+```
+npm run start
+```
 
+### Or
+```
 npm install gulp -g
-```
-### Start Project
-```
 gulp watch
 ```
 
