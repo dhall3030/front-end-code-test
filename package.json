@@ -13,7 +13,7 @@
     "gulp": "^3.9.1",
     "gulp-minify": "^3.1.0",
     "gulp-sass": "^4.0.2",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "normalize.css": "^8.0.1",
     "susy": "^3.0.5"
   }
